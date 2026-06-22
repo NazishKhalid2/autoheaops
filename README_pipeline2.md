@@ -2,11 +2,37 @@
 
 
 
-\*\*Owner:\*\* Abdul Rafay (F2023-546)  
+\*\*Owner:\*\* Abdul Rafay (F2023-546)
 
-\*\*Branch:\*\* pipeline-cicd  
+\*\*Branch:\*\* pipeline-cicd
 
 \*\*Project:\*\* AutoHealOps — Self-Healing DevOps Pipeline
+
+
+
+\---
+
+
+
+\## Live Deployment
+
+
+
+App is live on Railway:
+
+https://autoheaops-production.up.railway.app
+
+
+
+Routes:
+
+\- / — returns {"message": "AutoHealOps is running!", "status": "ok"}
+
+\- /health — returns {"status": "healthy"}
+
+\- /metrics — returns Prometheus metrics
+
+\- /error — returns {"error": "simulated error"} with 500 status
 
 
 
@@ -99,6 +125,8 @@ Job 3: security-scan → runs Trivy CVE scanner, uploads results
 \- Docker — Containerization
 
 \- Trivy — Security vulnerability scanner by Aqua Security
+
+\- Railway — Cloud deployment platform
 
 
 
